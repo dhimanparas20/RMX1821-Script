@@ -31,6 +31,11 @@ os.system(f"{rev}git clone {RM_PARTS} {L_RM_PARTS}")
 os.system(f"{rev}git clone {DIRAC} {L_DIRAC}")
 
 print()
+print("              {HIGHLIGHT}{CYAN}|CLONING VENDOR PACKAGES|{END}                 ")
+print()
+os.system(f"{rev}git clone git@github.com:dhimanparas20/vendor_packages.git vendor/packages")
+
+print()
 print("             {HIGHLIGHT}{CYAN}|APPLYING PATCHES|{END}                ")
 print()
 os.system(f"mv 0001-build-Add-option-to-append-vbmeta-image-to-boot-imag.patch /home/{OS}{DIR}/{BUILD_PATCH}/")
